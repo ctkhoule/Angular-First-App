@@ -2,6 +2,42 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
+## Démarrage Angular
+
+- Cloner le projet
+
+  `git clone https://github.com/ctkhoule/Angular-First-App.git`
+  
+- Changer répertoire
+
+  `cd Angular-First-App`
+  
+- Installer le repo avec npm
+
+  `npm install`
+  
+- Démarrer le serveur
+
+  `npm start`
+  
+- Vérifier les dépendances
+
+  `npm outdated`
+  
+- Production
+
+  `npm run build`
+  
+- Tests
+
+  `npm run lint`
+  
+  `npm run test`
+  
+  `npm run e2e`
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
