@@ -10,8 +10,16 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 // Configurer les Routes
 const routes: Routes = [
   {path: '',  component: HomeComponent, },
-  {path: 'contact',  component: ContactComponent, },
-  {path: 'about',  component: AboutComponent, },
+  {
+    path: 'contact',  
+    loadChildren: () => import('./modules/general/contact/contact.module')
+      .then(mod => mod.ContactModule)
+  },
+  {
+    path: 'about',  
+    loadChildren: () => import('./modules/general/about/about.module')
+      .then(mod => mod.AboutModule)
+  },
   {path: 'signin',  component: SigninComponent, },
   {path: '**',  component: NotFoundComponent, }
 ];
